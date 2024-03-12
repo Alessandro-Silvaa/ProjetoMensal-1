@@ -30,7 +30,6 @@ public class Cliente {
 	private String cpf;
 	@NotNull
 	private Integer idade;
-	@Pattern(regexp = "(^\\([1-9]{2}\\) (?:[2-8]|9[0-9])[0-9]{3}\\-[0-9]{4}$)")
 	@NotBlank(message = "Telefone inválido")
 	private String telefone;
 }

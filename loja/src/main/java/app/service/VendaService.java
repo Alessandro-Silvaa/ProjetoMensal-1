@@ -54,9 +54,9 @@ public class VendaService {
 		return vendaRepository.findByEndereco(endereco);
 	}
 	
-	public List<Venda> findByTotal(Double total){
+	public List<Venda> findByTotal(Double total1,Double total2){
 		
-		return vendaRepository.findByTotal(total);
+		return vendaRepository.findByTotal(total1,total2);
 	}
 	
 	public List<Venda> findByFormaPagamento(String formaPagamento){

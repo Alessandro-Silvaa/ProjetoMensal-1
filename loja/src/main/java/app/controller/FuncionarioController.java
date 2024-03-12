@@ -109,7 +109,7 @@ public class FuncionarioController {
 	public ResponseEntity<List<Funcionario>> findByIdade(@RequestParam int idade) {
 
 		try {
-			
+
 			List<Funcionario> funcionario = this.funcionarioService.findByIdade(idade);
 			return new ResponseEntity<>(funcionario, HttpStatus.OK);
 

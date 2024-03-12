@@ -109,11 +109,11 @@ public class VendaController {
 	}
 
 	@GetMapping("/findByTotal")
-	public ResponseEntity<List<Venda>> findByTotal(@RequestParam Double total) {
+	public ResponseEntity<List<Venda>> findByTotal(@RequestParam Double total1,@RequestParam Double total2) {
 
 		try {
 
-			List<Venda> venda = this.vendaService.findByTotal(total);
+			List<Venda> venda = this.vendaService.findByTotal(total1,total2);
 			return new ResponseEntity<>(venda, HttpStatus.OK);
 
 		} catch (Exception e) {
